@@ -6,7 +6,18 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/chuchip/servercloudconfig.git
-
+          uri: https://github.com/JagmohanRawatt/config-repo.git
+          search-paths: -config-th*
+          clone-on-start: true
+          force-pull: true
+          refresh-rate: 300
+          skip-ssl-validation: true
+          username: jagmohan.rawat2020@gmail.com
+          password: B@nty721
+  security:
+    user:
+      name: admin
+      password: password
 server:
   port: 8888
+
